@@ -1,0 +1,50 @@
+{% if i.rate == 5 or recipe.rate == 5 %}
+
+<div class="ratings">
+    <i class="fa fa-star" aria-hidden="true"></i>
+    <i class="fa fa-star" aria-hidden="true"></i>
+    <i class="fa fa-star" aria-hidden="true"></i>
+    <i class="fa fa-star" aria-hidden="true"></i>
+    <i class="fa fa-star" aria-hidden="true"></i>
+</div>
+{% elif i.rate == 4 or recipe.rate == 4 %}
+<div class="ratings">
+    <i class="fa fa-star" aria-hidden="true"></i>
+    <i class="fa fa-star" aria-hidden="true"></i>
+    <i class="fa fa-star" aria-hidden="true"></i>
+    <i class="fa fa-star" aria-hidden="true"></i>
+    <i class="fa fa-star-o" aria-hidden="true"></i>
+</div>
+{% elif i.rate == 3 or recipe.rate == 3 %}
+<div class="ratings">
+    <i class="fa fa-star" aria-hidden="true"></i>
+    <i class="fa fa-star" aria-hidden="true"></i>
+    <i class="fa fa-star" aria-hidden="true"></i>
+    <i class="fa fa-star-o" aria-hidden="true"></i>
+    <i class="fa fa-star-o" aria-hidden="true"></i>
+</div>
+{% elif i.rate == 2 or recipe.rate == 2 %}
+<div class="ratings">
+    <i class="fa fa-star" aria-hidden="true"></i>
+    <i class="fa fa-star" aria-hidden="true"></i>
+    <i class="fa fa-star-o" aria-hidden="true"></i>
+    <i class="fa fa-star-o" aria-hidden="true"></i>
+    <i class="fa fa-star-o" aria-hidden="true"></i>
+</div>
+{% elif i.rate == 1 or recipe.rate == 1 %}
+<div class="ratings">
+    <i class="fa fa-star" aria-hidden="true"></i>
+    <i class="fa fa-star-o" aria-hidden="true"></i>
+    <i class="fa fa-star-o" aria-hidden="true"></i>
+    <i class="fa fa-star-o" aria-hidden="true"></i>
+    <i class="fa fa-star-o" aria-hidden="true"></i>
+</div>
+{% else %}
+<div class="ratings">
+    <i class="fa fa-star-o" aria-hidden="true"></i>
+    <i class="fa fa-star-o" aria-hidden="true"></i>
+    <i class="fa fa-star-o" aria-hidden="true"></i>
+    <i class="fa fa-star-o" aria-hidden="true"></i>
+    <i class="fa fa-star-o" aria-hidden="true"></i>
+</div>
+{% endif %}
